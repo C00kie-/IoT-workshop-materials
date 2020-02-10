@@ -1,0 +1,551 @@
+Sending discover...
+Æ^@^@^@ÿÞô^A^@^H<ýþÿ
+
+U-Boot 1.1.4 (Mar 31 2014 - 16:03:14)
+
+U-boot dni29 V1.0 for DNI HW ID: 29764648 flash 4MB RAM 32MB 1st Radio 2x2
+ - Honey Bee 1.0
+
+DRAM:  32 MB
+Top of RAM usable for U-Boot at: 82000000
+Reserving 176k for U-Boot at: 81fd0000
+Reserving 192k for malloc() at: 81fa0000
+Reserving 44 Bytes for Board Info at: 81f9ffd4
+Reserving 36 Bytes for Global Data at: 81f9ffb0
+Reserving 128k for boot params() at: 81f7ffb0
+Stack Pointer at: 81f7ff98
+Now running in RAM - U-Boot at: 81fd0000
+Flash Manuf Id 0xc2, DeviceId0 0x20, DeviceId1 0x16
+flash size 4MB, sector count = 64
+Flash:  4 MB
+Using default environment
+
+In:    serial
+Out:   serial
+Err:   serial
+Net:   ath_gmac_enet_initialize...
+Fetching MAC Address from 0x81fed95c
+Fetching MAC Address from 0x81fed95c
+ath_gmac_enet_initialize: reset mask:c02200 
+Scorpion ---->S27 PHY*
+S27 reg init
+: cfg1 0x800c0000 cfg2 0x7114
+eth0: 3c:37:86:0c:cf:ed
+athrs27_phy_setup ATHR_PHY_CONTROL 4 :1000
+athrs27_phy_setup ATHR_PHY_SPEC_STAUS 4 :10
+eth0 up
+Honey Bee ---->  MAC 1 S27 PHY *
+S27 reg init
+ATHRS27: resetting s27
+ATHRS27: s27 reset done
+: cfg1 0x800c0000 cfg2 0x7214
+eth1: 3c:37:86:0c:cf:ec
+athrs27_phy_setup ATHR_PHY_CONTROL 0 :1000
+athrs27_phy_setup ATHR_PHY_SPEC_STAUS 0 :10
+athrs27_phy_setup ATHR_PHY_CONTROL 1 :1000
+athrs27_phy_setup ATHR_PHY_SPEC_STAUS 1 :10
+athrs27_phy_setup ATHR_PHY_CONTROL 2 :1000
+athrs27_phy_setup ATHR_PHY_SPEC_STAUS 2 :10
+athrs27_phy_setup ATHR_PHY_CONTROL 3 :1000
+athrs27_phy_setup ATHR_PHY_SPEC_STAUS 3 :10
+eth1 up
+eth0, eth1
+Hit any key to stop autoboot:  2  1  0 
+Trying eth0
+eth0 link down
+FAIL
+Trying eth1
+eth1 link down
+FAIL
+Using eth0 device
+Tx Timed out
+ping failed; host 192.168.1.1 is not alive
+Trying eth0
+eth0 link down
+FAIL
+Trying eth1
+eth1 link down
+FAIL
+
+ Client starts...[Listening] for ADVERTISE...TTT
+Retry count exceeded; boot the image as usual
+
+ nmrp server is stopped or failed !
+   Verifying Checksum ... OK
+ Begin Second part firmware check
+   Verifying Second part Checksum ... OK
+## Booting image at 9f020000 ...
+   Image Name:   MIPS OpenWrt Linux-2.6.31
+   Created:      2018-07-12   7:07:28 UTC
+   Image Type:   MIPS Linux Kernel Image (lzma compressed)
+   Data Size:    851776 Bytes = 831.8 kB
+   Load Address: 80002000
+   Entry Point:  801f68f0
+   Verifying Checksum ... OK
+   Uncompressing Kernel Image ... OK
+No initrd
+## Transferring control to Linux (at address 801f68f0) ...
+## Giving linux memsize in bytes, 33554432
+
+Starting kernel ...
+
+Booting QCA953x
+œinux version 2.6.31 (kale.wang@dnixm-compiler3) (gcc version 4.3.3 (GCC) ) #1 Thu Jul 12 15:07:24 CST 2018
+flash_size passed from bootloader = 4
+CPU revision is: 00019374 (MIPS 24Kc)
+ath_sys_frequency: cpu apb ddr apb cpu 550 ddr 400 ahb 200
+Determined physical RAM map:
+ memory: 08000000 @ 00000000 (usable)
+User-defined physical RAM map:
+ memory: 02000000 @ 00000000 (usable)
+Zone PFN ranges:
+  Normal   0x00000000 -> 0x00002000
+Movable zone start PFN for each node
+early_node_map[1] active PFN ranges
+    0: 0x00000000 -> 0x00002000
+Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 8128
+Kernel command line: rootfstype=squashfs console=ttyS0,115200 mem=32M board=WNR2000V5 mtdparts=ath-nor0:128k(u-boot)ro,832k(kernel),2752k(rootfs),128k(language),64k(pot),64k(traffic_meter),64k(config),64k(art),3584k@0x20000(firmware)
+PID hash table entries: 128 (order: 7, 512 bytes)
+Dentry cache hash table entries: 4096 (order: 2, 16384 bytes)
+Inode-cache hash table entries: 2048 (order: 1, 8192 bytes)
+Primary instruction cache 64kB, VIPT, 4-way, linesize 32 bytes.
+Primary data cache 32kB, 4-way, VIPT, cache aliases, linesize 32 bytes
+Writing ErrCtl register=00000000
+Readback ErrCtl register=00000000
+Memory: 29856k/32768k available (2034k kernel code, 2912k reserved, 355k data, 132k init, 0k highmem)
+NR_IRQS:128
+plat_time_init: plat time init done
+Calibrating delay loop... 365.56 BogoMIPS (lpj=731136)
+Mount-cache hash table entries: 512
+
+****************ALLOC***********************
+ Packet mem: 802897c0 (0x1800 bytes)
+********************************************
+
+NET: Registered protocol family 16
+ath_pcibios_init: bus 0
+***** Warning PCIe 0 H/W not found !!!
+registering PCI controller with io_map_base unset
+bio: create slab <bio-0> at 0
+NET: Registered protocol family 2
+IP route cache hash table entries: 1024 (order: 0, 4096 bytes)
+TCP established hash table entries: 1024 (order: 1, 8192 bytes)
+TCP bind hash table entries: 1024 (order: 0, 4096 bytes)
+TCP: Hash tables configured (established 1024 bind 1024)
+TCP reno registered
+NET: Registered protocol family 1
+ATH GPIOC major 0
+squashfs: version 4.0 (2009/01/31) Phillip Lougher
+msgmni has been set to 58
+io scheduler noop registered
+io scheduler deadline registered (default)
+Serial: 8250/16550 driver, 1 ports, IRQ sharing disabled
+serial8250.0: ttyS0 at MMIO 0xb8020000 (irq = 19) is a 16550A
+console [ttyS0] enabled
+9 cmdlinepart partitions found on MTD device ath-nor0
+Creating 9 MTD partitions on "ath-nor0":
+0x000000000000-0x000000020000 : "u-boot"
+0x000000020000-0x0000000f0000 : "kernel"
+0x0000000f0000-0x0000003a0000 : "rootfs"
+mtd: partition "rootfs" set to be root filesystem
+mtd: partition "rootfs_data" created automatically, ofs=3A0000, len=0 
+0x0000003a0000-0x000000400000 : "rootfs_data"
+0x0000003a0000-0x0000003c0000 : "language"
+0x0000003c0000-0x0000003d0000 : "pot"
+0x0000003d0000-0x0000003e0000 : "traffic_meter"
+0x0000003e0000-0x0000003f0000 : "config"
+0x0000003f0000-0x000000400000 : "art"
+0x000000020000-0x0000003a0000 : "firmware"
+u32 classifier
+    Performance counters on
+Netfilter messages via NETLINK v0.30.
+NAT Session Management application ports priority table is loaded!
+nf_conntrack version 0.5.0 (512 buckets, 2048 max)
+CONFIG_NF_CT_ACCT is deprecated and will be removed soon. Please use
+nf_conntrack.acct=1 kernel parameter, acct=1 nf_conntrack module option or
+sysctl net.netfilter.nf_conntrack_acct=1 to enable it.
+ip_tables: (C) 2000-2006 Netfilter Core Team
+TCP cubic registered
+NET: Registered protocol family 10
+ip6_tables: (C) 2000-2006 Netfilter Core Team
+IPv6 over IPv4 tunneling driver
+NET: Registered protocol family 17
+Ebtables v2.0 registered
+802.1Q VLAN Support v1.8 Ben Greear <greearb@candelatech.com>
+All bugs added by David S. Miller <davem@redhat.com>
+serial led off
+athwdt_init: Registering WDT success
+VFS: Mounted root (squashfs filesystem) readonly on device 31:2.
+Freeing unused kernel memory: 132k freed
+Please be patient, while OpenWrt loads ...
+switching to jffs2
+mount: mounting /dev/mtdblock3 on /jffs failed
+jffs2 not ready yet; using ramdisk
+mount: mounting /proc on /mnt/proc failed
+Unlocking rootfs ...
+- init -
+init started:  BusyBox v1.4.2 (2018-07-12 15:01:57 CST) multi-call binary
+Loading data from /dev/mtd7 ...
+Done!
+The data center is Running ...
+PPP generic driver version 2.4.2
+dni-lan-qos module init.
+dni-qos module init.
+NET: Registered protocol family 24
+nf_nat_STARCRAFT: module license 'unspecified' taints kernel.
+Disabling lock debugging due to kernel taint
+nf_conntrack_rtsp v0.6.21 loading
+nf_nat_rtsp v0.6.21 loading
+nf_conntrack_proto_esp loaded
+NET: Registered protocol family 27
+PPPoL2TP kernel driver, V0.16.1
+PPTP-GRE-v1.13 2007 (C) Delta Networks Inc.
+/etc/net6conf/6proc: /etc/net6conf/6proc: 33: cannot create /proc/sys/net/ipv6/ipv6_srcrt_type_2: Directory nonexistent
+/etc/net6conf/6proc: /etc/net6conf/6proc: 33: cannot create /proc/sys/net/ipv6/conf/br1/accept_dad: Directory nonexistent
+/etc/net6conf/6proc: /etc/net6conf/6proc: 33: cannot create /proc/sys/net/ipv6/neigh/br1/not_send_neighbor_solicitation: Directory nonexistent
+/etc/net6conf/6proc: /etc/net6conf/6proc: 33: cannot create /proc/sys/net/ipv6/neigh/eth1/not_send_neighbor_solicitation: Directory nonexistent
+Generating Rules...
+Done!
+SN: 4CY78A5H01387
+LAN MAC: 3C:37:86:0C:CF:EC
+WAN MAC: 3C:37:86:0C:CF:ED
+WLA MAC: 34:30:36:36:34:31
+The region number is: 0x0002
+REGION: WW
+cp: cannot stat '/etc/wpa2.orig/*': No such file or directory
+qca955x_GMAC: Length per segment 1536
+953x_GMAC: qca953x_gmac_attach
+Link Int Enabled 
+qca953x_set_gmac_caps  CHECK DMA STATUS 
+mac:0 Registering S27....
+qca955x_GMAC: RX TASKLET - Pkts per Intr:18
+qca955x_GMAC: Mac address for unit 0:bfff0000
+qca955x_GMAC: 3c:37:86:0c:cf:ed 
+qca955x_GMAC: Max segments per packet :   1
+qca955x_GMAC: Max tx descriptor count :   128
+qca955x_GMAC: Max rx descriptor count :   128
+qca955x_GMAC: Mac capability flags    :   2581
+953x_GMAC: qca953x_gmac_attach
+Link Int Enabled 
+qca953x_set_gmac_caps  CHECK DMA STATUS 
+mac:1 Registering S27....
+qca955x_GMAC: RX TASKLET - Pkts per Intr:18
+qca955x_GMAC: Mac address for unit 1:bfff0006
+qca955x_GMAC: 3c:37:86:0c:cf:ec 
+qca955x_GMAC: Max segments per packet :   1
+qca955x_GMAC: Max tx descriptor count :   128
+qca955x_GMAC: Max rx descriptor count :   128
+qca955x_GMAC: Mac capability flags    :   2D81
+HONEYBEE ----> S27 PHY MDIO
+ATHRS27: (1) REG 0x600 -->:1080
+ATHRS27: (2) REG 0x600 -->:0
+Loading DNI-ENET driver
+athr_gmac_ring_alloc Allocated 2048 at 0x81ebd000
+athr_gmac_ring_alloc Allocated 2048 at 0x81ecb800
+HONEYBEE ----> S27 PHY MDIO
+Setting Drop CRC Errors, Pause Frames and Length Error frames 
+Setting PHY...
+ADDRCONF(NETDEV_UP): eth0: link is not ready
+athr_gmac_ring_alloc Allocated 2048 at 0x81f22000
+athr_gmac_ring_alloc Allocated 2048 at 0x81e6b800
+HONEYBEE ----> S27 PHY MDIO
+ATHRS27: resetting s27
+ATHRS27: s27 reset done
+Setting Drop CRC Errors, Pause Frames and Length Error frames 
+Setting PHY...
+ADDRCONF(NETDEV_UP): eth1: link is not ready
+athr_gmac_ring_free Freeing at 0x81f22000
+athr_gmac_ring_free Freeing at 0x81e6b800
+athr_gmac_ring_free Freeing at 0x81ebd000
+athr_gmac_ring_free Freeing at 0x81ecb800
+Write Reg: 0x0000002c: Oldval = 0xfe7f007f Newval = 0xfe7f7f7f
+Write Reg: 0x0000003c: Oldval = 0xcf00004e Newval = 0xce48004e
+Write Reg: 0x00000104: Oldval = 0x00004004 Newval = 0x00304004
+Write Reg: 0x00000204: Oldval = 0x00004004 Newval = 0x00304004
+Write Reg: 0x00000304: Oldval = 0x00004004 Newval = 0x00304004
+Write Reg: 0x00000404: Oldval = 0x00004004 Newval = 0x00304004
+Write Reg: 0x00000504: Oldval = 0x00004004 Newval = 0x00304004
+Write Reg: 0x0000003c: Oldval = 0xce48004e Newval = 0xce68004e
+Write Reg: 0x00058804: Oldval = 0x0000000b Newval = 0x00000000
+Write Reg: 0x00058808: Oldval = 0x00000013 Newval = 0x00000000
+Write Reg: 0x0005880c: Oldval = 0x0000001e Newval = 0x00000000
+Write Reg: 0x00058810: Oldval = 0x00000000 Newval = 0x00000000
+Write Reg: 0x00058800: Oldval = 0x00000000 Newval = 0x00000001
+Write Reg: 0x00058818: Oldval = 0x0000006c Newval = 0x00000006
+Write Reg: 0x00058400: Oldval = 0x38ffb766 Newval = 0x5e7ffffa
+Write Reg: 0x00058404: Oldval = 0x6aefdb07 Newval = 0x00000100
+Write Reg: 0x00058408: Oldval = 0xf5f31c0e Newval = 0x00000000
+Write Reg: 0x0005840c: Oldval = 0x1a180883 Newval = 0x00000001
+Write Reg: 0x00058410: Oldval = 0x000000c9 Newval = 0x00000001
+Write Reg: 0x00058c00: Oldval = 0x8fef2afd Newval = 0xffffffff
+Write Reg: 0x00058c04: Oldval = 0xefe3e8fb Newval = 0x0000ffff
+Write Reg: 0x00058c08: Oldval = 0xd7f47cff Newval = 0x00000000
+Write Reg: 0x00058c0c: Oldval = 0x7fd92d00 Newval = 0x00000fff
+Write Reg: 0x00058814: Oldval = 0x00000045 Newval = 0x0000001f
+Write Reg: 0x000athr_gmac_ring_alloc Allocated 2048 at 0x81ecb800
+5881c: Oldval = athr_gmac_ring_alloc Allocated 2048 at 0x81f22800
+0x00000004 Newval = 0x00000001
+HONEYBEE ----> S27 PHY MDIO
+Write Reg: 0x000Setting Drop CRC Errors, Pause Frames and Length Error frames 
+58000: Oldval = Setting PHY...
+0x00000000 Newval = 0x00000000
+Write Reg: 0x00058004: Oldval = 0x82d00ce0 Newval = 0x11f00000
+Write Reg: 0x00058008: Oldval = 0x00000000 Newval = 0x00000000
+init.enet: Default WAN MAC is : 3C:37:86:0C:CF:ED
+ADDRCONF(NETDEV_UP): eth1: link is not ready
+device eth1.1 entered promiscuous mode
+device eth1 entered promiscuous mode
+init.enet: Default LAN MAC is : 3C:37:86:0C:CF:Edevice pas0 entered promiscuous mode
+C
+device eth0 entered promiscuous mode
+device eth1.2 entered promiscuous mode
+init.enet: Default WAN MAC is : 3C:37:86:0C:CF:ED
+athr_gmac_ring_alloc Allocated 2048 at 0x81f67800
+athr_gmac_ring_alloc Allocated 2048 at 0x81f67000
+HONEYBEE ----> S27 PHY MDIO
+Setting Drop CRC Errors, Pause Frames and Length Error frames 
+Setting PHY...
+ADDRCONF(NETDEV_UP): eth0: link is not ready
+br1: port 2(eth1.2) entering forwarding state
+mkdir: cannot create directory '/home': Read-only file system
+br0: port 2(pas0) entering forwarding state
+br0: port 1(eth1.1) entering forwarding state
+br0: port 2(pas0) entering disabled state
+br0: port 1(eth1.1) entering disabled state
+br0: port 2(pas0) entering forwarding state
+br0: port 1(eth1.1) entering forwarding state
+syslogd can't open the temp log file: /tmp/log/log-message or /var/log/messages
+udhcp server (v0.9.8) started
+The attached devices demo is Running ...
+The telnetenable is running ...
+Deleting static route ... Done!
+Adding static route ... Done!
+athr_gmac_ring_free Freeing at 0x81f67800
+athr_gmac_ring_free Freeing at 0x81f67000
+br1: port 1(eth0) entering disabled state
+dni-qos attached on eth0.
+athr_gmac_ring_alloc Allocated 2048 at 0x81f67000
+athr_gmac_ring_alloc Allocated 2048 at 0x81f79000
+HONEYBEE ----> S27 PHY MDIO
+Setting Drop CRC Errors, Pause Frames and Length Error frames 
+Setting PHY...
+ADDRCONF(NETDEV_UP): eth0: link is not ready
+athr_gmac_ring_free Freeing at 0x81f67000
+athr_gmac_ring_free Freeing at 0x81f79000
+br1: port 1(eth0) entering disabled state
+br0: port 2(pas0) entering disabled state
+br0: port 1(eth1.1) entering disabled state
+dni-qos attached on br0.
+br0: port 2(pas0) entering forwarding state
+br0: port 1(eth1.1) entering forwarding state
+athr_gmac_ring_alloc Allocated 2048 at 0x81f79000
+athr_gmac_ring_alloc Allocated 2048 at 0x81f4d000
+HONEYBEE ----> S27 PHY MDIO
+Setting Drop CRC Errors, Pause Frames and Length Error frames 
+Setting PHY...
+ADDRCONF(NETDEV_UP): eth0: link is not ready
+br1: port 2(eth1.2) entering disabled state
+br1: port 2(eth1.2) entering forwarding state
+udhcp client (v0.9.8) started
+killall: pppd: no process killed
+Deleting static route ... Done!
+Deleting static route ... Done!
+Adding static route ... Done!
+start rip process
+start initial data
+Sending discover...
+No lease, forking to background.
+time zone index is : 0
+Run NTP Client with setting: pri:time-g.netgear.com sec:time-h.netgear.com
+killall: miniupnpd: no process killed
+killall: noip2: no process killed
+killall: phddns: no process killed
+Starting Firewall...
+Done!
+/etc/rc.common: /etc/rc.common: 88: /bin: Permission denied
+POT is Running...
+POT is Finished!!!
+The POT-(Get/Set) Demo is Running ...
+ADDRCONF(NETDEV_UP): sit0: link is not ready
+ADDRCONF(NETDEV_UP): eth0: link is not ready
+ADDRCONF(NETDEV_UP): eth1: link is not ready
+The region number is: 0x0002
+REGION: WW
+Unknown option max_leaseduration in file /tmp/etc/miniupnpd.conf
+Unknown option check_interval in file /tmp/etc/miniupnpd.conf
+The abbreviation of English is Eng!
+Failed to fseek!
+Didn't find the language table we need!
+gui_region = English
+region = English, download_region =  
+ Update string table successfully, memory usage: 280KB.
+The httpd server is running ...
+AUTO FW CHECK: power cycle
+week_day == 4
+Args: 1
+ath_hal: 0.9.17.1 (AR9380, REGOPS_FUNC, WRITE_EEPROM, 11D)
+ath_rate_atheros: Copyright (c) 2001-2005 Atheros Communications, Inc, All Rights Reserved
+ath_dev: Copyright (c) 2001-2007 Atheros Communications, Inc, All Rights Reserved
+ath_ahb: 10.1.478 (Atheros/multi-bss)
+__ath_attach: Set global_scn[0]
+is 2.0 etsi
+Enterprise mode: 0x03fc0000
+Restoring Cal data from Flash
+Green-AP : Green-AP : Attached
+
+ath_get_caps[5959] rx chainmask mismatch actual 3 sc_chainmak 0
+ath_get_caps[5934] tx chainmask mismatch actual 3 sc_chainmak 0
+SC Callback Registration for wifi0
+wifi0: Atheros ???: mem=0xb8100000, irq=2
+ath_pci: 10.1.478 (Atheros/multi-bss)
+wifi1     no private ioctls.
+
+Creating ap for NETGEAR49 on
+VAP device ath0 created 
+Added ath0 mode master
+Invalid command : bgscan
+Interface doesn't accept private ioctl...
+HALDbg (8BE0): Operation not permitted
+ 
+ DES SSID SET=NETGEAR49 
+ ieee80211_ioctl_siwmode: imr.ifm_active=131712, new mode=3, valid=1 
+/etc/ath/makeVAP: /etc/ath/makeVAP: 469: cannot create /proc/sys/dev/ath/htdupieenable: Directory nonexistent
+WARNING: Fragmentation with HT mode NOT ALLOWED!!
+Error for wireless request "Set Fragmentation Threshold" (8B24) :
+    SET failed on device ath0 ; Invalid argument.
+Invalid command : setVowExt
+Invalid command : set_vsp_enable
+Interface doesn't accept private ioctl...
+setPhyRestartWar (8BE0): Operation not permitted
+Invalid command : setVowExtStats
+sc nodebug 0 
+Created ath0 mode ap for NETGEAR49
+lo        no wireless extensions.
+
+sit0      no wireless extensions.
+
+br0       no wireless extensions.
+
+eth0      no wireless extensions.
+
+eth1      no wireless extensions.
+
+pas0      no wireless extensions.
+
+eth1.1    no wireless extensions.
+
+eth1.2    no wireless extensions.
+
+br1       no wireless extedevice ath0 entered promiscuous mode
+nsions.
+
+wifi0     no wireless extensions.
+
+arping: bind: Cannot assign requested address
+>>>>> WPS MODE, 2
+>>>>> WPS ENABLED, PSK
+cat: /etc/wpa2/WSC_ath0.conf: No such file or directory
+>>>>> WPS Translate, Index:0
+Sending discover...
+Configuration fi ieee80211_ioctl_siwmode: imr.ifm_active=131712, new mode=3, valid=1 
+le: /etc/wpa2/WS DEVICE IS DOWN ifname=ath0
+C_ath0.conf
+ DEVICE IS DOWN ifname=ath0
+ath0: Could not connect to kernel driver
+Using interface ath0 with hwaddr 3c:37:86:0c:cf:ec and ssid 'NETGEAR49'
+Invoking ACS module for Best channel selection 
+br0: port 3(ath0) entering forwarding state
+ieee80211_acs_scan_evhandler scan_id 00000000 event 0 reason 0 
+ieee80211_acs_scan_evhandler scan_id 00000000 event 6 reason 0 
+	DCS for CW interference mitigation:   0
+	DCS for WLAN interference mitigation: 0
+ieee80211_acs_scan_evhandler scan_id 00000000 event 8 reason 1 
+ieee80211_acs_scan_evhandler scan_id 00000000 event 6 reason 0 
+ieee80211_acs_scan_evhandler scan_id 00000000 event 8 reason 1 
+ieee80211_acs_scan_evhandler scan_id 00000000 event 6 reason 0 
+ieee80211_acs_scan_evhandler scan_id 00000000 event 8 reason 1 
+ieee80211_acs_scan_evhandler scan_id 00000000 event 6 reason 0 
+ieee80211_acs_scan_evhandler scan_id 00000000 event 8 reason 1 
+ieee80211_acs_scan_evhandler scan_id 00000000 event 6 reason 0 
+ieee80211_acs_scan_evhandler scan_id 00000000 event 8 reason 1 
+ieee80211_acs_scan_evhandler scan_id 00000000 event 6 reason 0 
+ieee80211_acs_scan_evhandler scan_id 00000000 event 8 reason 1 
+ieee80211_acs_scan_evhandler scan_id 00000000 event 6 reason 0 
+traffic_meter start : ieee80211_acs_scan_evhandler scan_id 00000000 event 8 reason 1 
+ieee80211_acs_scan_evhandler scan_id 00000000 event 6 reason 0 
+.
+ieee80211_acs_scan_evhandler scan_id 00000000 event 8 reason 1 
+ieee80211_acs_scan_evhandler scan_id 00000000 event 6 reason 0 
+killall: igmpproxy: no process killed
+$Starting igmpproxy: 
+
+ieee80211_acs_scan_evhandler scan_id 00000000 event 8 reason 1 
+ieee80211_acs_scan_evhandler scan_id 00000000 event 6 reason 0 
+igmpproxy, Version 0.1 beta2, Build 090422 
+Copyright 2005 by Johnny Egeland <johnny@rlo.org>
+Modified by Tos Xu for IGMP snooping in April, 2009.
+Distributed under the GNU GENERAL PUBLIC LICENSE, Version 2 - check GPL.txt
+
+Boot up procedure is Finished!!!
+
+Please press Enter to activate this console. ieee80211_acs_scan_evhandler scan_id 00000000 event 8 reason 1 
+ieee80211_acs_scan_evhandler scan_id 00000000 event 6 reason 0 
+ieee80211_acs_scan_evhandler scan_id 00000000 event 8 reason 1 
+ieee80211_acs_scan_evhandler scan_id 00000000 event 6 reason 0 
+ieee80211_acs_scan_evhandler scan_id 00000000 event 8 reason 1 
+ieee80211_acs_scan_evhandler scan_id 00000000 event 6 reason 0 
+ieee80211_acs_scan_evhandler scan_id 00000000 event 8 reason 1 
+ieee80211_acs_scan_evhandler scan_id 00000000 event 1 reason 1 
+Channel 1 average beacon RSSI 20 noisefloor -118  ieee80211_acs_find_best_11ng_centerchan chan: 1 beacon RSSI + weighted noisefloor: -216
+Channel 4 average beacon RSSI 4 noisefloor -118  ieee80211_acs_find_best_11ng_centerchan chan: 4 beacon RSSI + weighted noisefloor: -232
+Channel 11 average beacon RSSI 19 noisefloor -116  ieee80211_acs_find_best_11ng_centerchan chan: 11 beacon RSSI + weighted noisefloor: -213
+ieee80211_acs_find_best_11ng_centerchan found best 11ng center chan: 4 rssi: -232
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+
+
+
+BusyBox v1.4.2 (2018-07-12 15:01:57 CST) Built-in shell (ash)
+Enter 'help' for a list of built-in commands.
+
+  _______                     ________        __
+ |       |.-----.-----.-----.|  |  |  |.----.|  |_
+ |   -   ||  _  |  -__|     ||  |  |  ||   _||   _|
+ |_______||   __|_____|__|__||________||__|  |____|
+          |__| W I R E L E S S   F R E E D O M
+ KAMIKAZE (bleeding edge, r18571) ------------------
+  * 10 oz Vodka       Shake well with ice and strain
+  * 10 oz Triple sec  mixture into 10 shot glasses.
+  * 10 oz lime juice  Salute!
+ ---------------------------------------------------
+root@WNR2000v5:/# Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+Sending discover...
+
+root@WNR2000v5:/# 
+root@WNR2000v5:/# Sending discover...
+Sending discover...
+
+root@WNR2000v5:/# 
+root@WNR2000v5:/# 
+root@WNR2000v5:/# Sending discover...
