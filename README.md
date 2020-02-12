@@ -1,6 +1,6 @@
 # Workshop materials for IoT supply chain analysis and firmware reconnaissance
 
-[![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.png)](https://gitter.im/workshop-materials/) ![Contributors](https://img.shields.io/github/contributors/C00kie-/workshop-materials?style=flat-square) 
+[![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.png)](https://gitter.im/workshop-materials/) ![Contributors](https://img.shields.io/github/contributors/C00kie-/workshop-materials?style=flat-square)
 
 # Presented workshops since 2019
 
