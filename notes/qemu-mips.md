@@ -38,6 +38,28 @@ qemu-system-mips -M malta -kernel vmlinux-3.2.0-4-4kc-malta -hda debian_wheezy_m
 - We add an ethernet device (with a driver supported by MIPS architecture).
 - A `hostfw` rule (redir is not used anymore in recent version) is to redirect the SSH port (TCP/22) on the local TCP/5555.
 
+#### Copying firmware filesystem to qemu
 
+~~~~console
+adulau@dobbertin:~/git/workshop-materials/extracted-firmwares/Netgear-N300/_mtdblock2.bin.extracted$ scp -P5555 sq.tar.gz root@127.0.0.1:/root 
+root@127.0.0.1's password: 
+sq.tar.gz                                                                                                                                                   100% 3517KB   3.2MB/s   00:01
+~~~~
+
+#### Extracting squashfs
+
+~~~~console
+root@debian-mips:~# tar xvfz sq.tar.gz
+~~~~
+
+#### chroot to the squashfs
+
+~~~~
+cd squashfs-root
+root@debian-mips:~# chroot . ./bin/sh
+mount -t proc proc proc/
+mount --rbind /sys sys/
+mount --rbind /dev dev/
+~~~~
 
 
