@@ -6,6 +6,12 @@
 | ------------ | -----------  |
 | [A brief introduction to firmware extraction](./blob/master/introduction_firmware_extraction_01.pdf) | 10th February 2020 - OffensiveCon 2020|
 
+# Notes to support the workshop
+
+| Title | Last Update  |
+| ----- | ------------ |
+| [Running firmware binaries in a virtualised environment](./blob/master/notes/qemu-mips.md) (qemu) | 12th February 2020 |
+
 # Contributing
 
 We welcome contributions or ideas in order to improve or extend the workshop materials. You can contribute by creating issues or proposing pull-request to this repository.
