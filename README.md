@@ -1,5 +1,7 @@
 # workshop-materials
 
+[![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.png)](https://gitter.im/workshop-materials/)
+
 # Presented workshops since 2019
 
 | Slides (PDF) | When & Where |
