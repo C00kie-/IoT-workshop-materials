@@ -1,6 +1,6 @@
 # required software to perform firmware extraction and analysis 
 
-:notice: check with `apt-cache policy [package]` for version
+:memo: check with `apt-cache policy [package]` for version on Debian based OS
 
 # Serial communication
 
