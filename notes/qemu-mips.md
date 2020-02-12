@@ -13,6 +13,7 @@ This note includes the complete steps to extract binaries, setup a qemu VM to ru
 ## Configuration hints during the workshop
 
 - SSH port is 5555
+- :raised_hand: this note was tested on qemu 4.2.0
 
 ## Running extracted binaries from a firmware in qemu
 
