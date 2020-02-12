@@ -4,13 +4,13 @@
 
 | Slides (PDF) | When & Where |
 | ------------ | -----------  |
-| [A brief introduction to firmware extraction](./blob/master/introduction_firmware_extraction_01.pdf) | 10th February 2020 - OffensiveCon 2020|
+| [A brief introduction to firmware extraction](https://github.com/C00kie-/workshop-materials/blob/master/introduction_firmware_extraction_01.pdf) | 10th February 2020 - OffensiveCon 2020|
 
 # Notes to support the workshop
 
 | Title | Last Update  |
 | ----- | ------------ |
-| [Running firmware binaries in a virtualised environment](./blob/master/notes/qemu-mips.md) (qemu) | 12th February 2020 |
+| [Running firmware binaries in a virtualised environment](https://github.com/C00kie-/workshop-materials/blob/master/notes/qemu-mips.md) (qemu) | 12th February 2020 |
 
 # Contributing
 
