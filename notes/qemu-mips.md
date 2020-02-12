@@ -1,3 +1,5 @@
+# Running firmware binaries in a virtualised environment (qemu)
+
 ## Problem Statement
 
 - Firmware are developed to be executed on dedicated hardware
@@ -83,13 +85,21 @@ root@debian-mips:~# tar xvfz sq.tar.gz
 
 #### chroot to the squashfs
 
-~~~~
+~~~~console
 root@debian-mips:~# cd squashfs-root
 root@debian-mips:~# chroot . ./bin/sh
 ...
-root@debian-mips:~# mount -t proc proc proc/
-root@debian-mips:~# mount --rbind /sys sys/
-root@debian-mips:~# mount --rbind /dev dev/
+/ # mount -t proc proc proc/
+/ # mount --rbind /sys sys/
+/ # mount --rbind /dev dev/
 ~~~~
+
+#### running the http services from the firmware
+
+~~~~console
+/ # uhttp
+~~~~
+
+Don't forget to add the TCP redirection for the HTTP service by adding parameter `hostfwd=tcp::9999-:80` when starting qemu.
 
 
