@@ -1,17 +1,21 @@
-needed softwares to perform firmware extraction and analysis 
-see : apt-cache policy [package] for version
+# required software to perform firmware extraction and analysis 
 
-Serial communication:
-minicom (2.7.1build1)
+:notice: check with `apt-cache policy [package]` for version
 
-Extraction:
-Static binaries
-	netcat (MIPS) -https://github.com/darkerego/mips-binaries
-	tftp (x86) - (link to provide)
+# Serial communication
 
-Analysis:
-squashfs-tools (1:4.3-12)
-binwalk (compiled from sources + dependancies)
+- minicom (2.7.1build1)
+
+# Extraction
+
+## Static binaries
+ - netcat (MIPS) -https://github.com/darkerego/mips-binaries
+ - tftp (x86) - (link to provide)
+
+# Analysis
+
+- squashfs-tools (1:4.3-12)
+- binwalk (compiled from sources + dependancies)
 	https://github.com/ReFirmLabs/binwalk
 	deps.sh script (explain)
 		external utilities
@@ -21,9 +25,7 @@ binwalk (compiled from sources + dependancies)
 
 
 
-
-
-
+~~~~console
 ad1@ad1:~$ apt-cache policy squashfs-tools
 squashfs-tools:
   Installed: 1:4.3-12
@@ -48,5 +50,5 @@ binwalk:
      2.1.2~git20180830+dfsg1-1 500
         500 http://archive.linux.duke.edu/ubuntu disco/universe amd64 Packages
         500 http://archive.linux.duke.edu/ubuntu disco/universe i386 Packages
-
+~~~~
 
