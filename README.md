@@ -1,3 +1,7 @@
+IOT Supply chain analysis 
+
+Firmware reconaissance 
+
 # workshop-materials
 
 [![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.png)](https://gitter.im/workshop-materials/) ![Contributors](https://img.shields.io/github/contributors/C00kie-/workshop-materials?style=flat-square) 
