@@ -19,10 +19,11 @@ This note includes the complete steps to extract binaries, setup a qemu VM to ru
 
 ### qemu
 
+[QEMU](https://www.qemu.org/) is a generic and open source machine emulator. QEMU supports a wide range of target architecture such as ARM, MIPS or PPC which are often used in embedded systems.
+
 #### Default Debian as bootstrap
 
-[https://people.debian.org/~aurel32/qemu/](https://people.debian.org/~aurel32/qemu/) provides a set of qemu images along with the Linux kernel for each architecture.
-
+As QEMU is just the machine emulator, a complete operating system is required for the target architecture. As the majority of firmware collected are running Linux. We will use the one created by a Debian developer.  [https://people.debian.org/~aurel32/qemu/](https://people.debian.org/~aurel32/qemu/) provides a set of qemu images along with the Linux kernel for each architecture.
 
 #### How to select the architecture?
 
@@ -86,6 +87,8 @@ root@debian-mips:~# tar xvfz sq.tar.gz
 
 #### chroot to the squashfs
 
+If you want to use the binaries from the firmware and especially to be sure that the binaries use the appropriate files. We will change the root directory with the `chroot` command as seen below.
+
 ~~~~console
 root@debian-mips:~# cd squashfs-root
 root@debian-mips:~# chroot . ./bin/sh
@@ -94,6 +97,8 @@ root@debian-mips:~# chroot . ./bin/sh
 / # mount --rbind /sys sys/
 / # mount --rbind /dev dev/
 ~~~~
+
+When changing the root directory, the system directory such as `/sys` or `/dev` needs to be recreated.
 
 #### running the http services from the firmware
 
