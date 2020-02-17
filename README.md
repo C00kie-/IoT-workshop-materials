@@ -10,10 +10,18 @@
 
 # Notes to support the workshop
 
-| Title | Last Update  |
-| ----- | ------------ |
-| [Running firmware binaries in a virtualised environment](https://github.com/C00kie-/workshop-materials/blob/master/notes/qemu-mips.md) (qemu) | 12th February 2020 |
+| Title | Last Update  | Level |
+| ----- | ------------ | ------ |
+| [Running firmware binaries in a virtualised environment](https://github.com/C00kie-/workshop-materials/blob/master/notes/qemu-mips.md) (qemu) | 12th February 2020 | Medium |
 
+# Required level of knowledge and competence
+
+| Level name | Expected knowledge and competence |
+| ----- | ------------ |
+| entry | Basic computer skills as a user. Programming or knowledge of computer structure is not required.|
+| medium | Basic computer skills as an advanced user with a daily use of a Unix-like operating system. Basic programming skills are required such as shell scripting.|
+| advanced | Knowlege of multiple programming languages such as Python or C. Basic knowledge of computer structure and an assembly language.|
+ 
 # Contributing
 
 We welcome contributions or ideas in order to improve or extend the workshop materials. You can contribute by creating issues or proposing pull-request to this repository.
