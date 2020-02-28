@@ -21,7 +21,7 @@
 | entry | Basic computer skills as a user. Programming or knowledge of computer structure is not required.|
 | medium | Basic computer skills as an advanced user with a daily use of a Unix-like operating system. Basic programming skills are required such as shell scripting.|
 | advanced | Knowlege of multiple programming languages such as Python or C. Basic knowledge of computer structure and an assembly language.|
- 
+
 # Contributing
 
 We welcome contributions or ideas in order to improve or extend the workshop materials. You can contribute by creating issues or proposing pull-request to this repository.
@@ -33,4 +33,8 @@ There is a Gitter available at : https://gitter.im/workshop-materials/ where you
 # License
 
 All material are licensed under the Creative Commons Attributions Share alike 4.0 International license.
+
+# Legal - Vulnerability Disclosure
+
+As you might know reversing firmware and hardware might lead to discover security vulnerabilities. If you contribute to this repository and discover potential vulnerabilities in the analysed firmware, we recommend to contact the security contact of the vendor to make a coordinated vulnerability disclosure. If you cannot or don't want to report to the vendor, you can report via [zerodisclo.com](https://zerodisclo.com/) or to [CIRCL](https://www.circl.lu/contact/).
 
